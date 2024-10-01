@@ -8,13 +8,17 @@
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
 >
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
   <title>Sunshine Kindergarten</title>
 </head>
 
 <body>
-  <main class="">
+  <main class="container">
     <header id="home">
-      <h1>Sunshine Kindergarten</h1>
+      <div class="logo">
+        <img src="images/icon.png" alt="">
+        <h1>Sunshine Kindergarten</h1>
+      </div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
@@ -22,23 +26,32 @@
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#announcements">Announcements</a></li>
           <li><a href="#teachers">Teachers</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </header>
 
-    <section id="schedule">
+    <section class="welcome">
+      <p>Welcome, Noor!</p>
+      <p>We hope you are having a great day.</p>
+    </section>
+
+    <section class="schedule" id="schedule">
+      <h2>Schedule</h2>
       <table>
         <thead>
-          <th colspan="4">
-            Today's Schedule
-          </th>
+          <tr>
+            <th colspan="4">
+              Today's Schedule
+            </th>
+          </tr>
         </thead>
 
         <tr>
-          <td>8:00 - 9:00</td>
-          <td>9:00 - 10:00</td>
-          <td>10:00 - 11:00</td>
-          <td>11:00 - 12:00</td>
+          <th>8:00 - 9:00</th>
+          <th>9:00 - 10:00</th>
+          <th>10:00 - 11:00</th>
+          <th>11:00 - 12:00</th>
         </tr>
 
         <tr>
@@ -50,13 +63,29 @@
       </table>
     </section>
 
-    <section>
-      
+    <section id="gallery">
+      <h2>Gallery</h2>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, delectus. Repellat, neque animi rerum recusandae commodi in excepturi facere corrupti eaque dolorem, delectus officiis necessitatibus repudiandae nam cumque ut dolore ab at ullam. Culpa natus rerum ipsa error odit delectus hic optio temporibus minima eius facilis reiciendis, quisquam sapiente eos laboriosam harum vero accusantium eveniet assumenda alias maiores quia quas ullam! Iure soluta architecto, aspernatur atque id, laborum possimus non, eius placeat quia maxime expedita voluptates excepturi debitis accusantium quam quod quo? Quae quaerat voluptates mollitia error, aperiam fuga. Veritatis, quasi! Culpa distinctio recusandae impedit atque veritatis optio obcaecati deserunt.
+      </div>
     </section>
 
+    <section id="announcements">
+      <h2>Announcements</h2>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, delectus. Repellat, neque animi rerum recusandae commodi in excepturi facere corrupti eaque dolorem, delectus officiis necessitatibus repudiandae nam cumque ut dolore ab at ullam. Culpa natus rerum ipsa error odit delectus hic optio temporibus minima eius facilis reiciendis, quisquam sapiente eos laboriosam harum vero accusantium eveniet assumenda alias maiores quia quas ullam! Iure soluta architecto, aspernatur atque id, laborum possimus non, eius placeat quia maxime expedita voluptates excepturi debitis accusantium quam quod quo? Quae quaerat voluptates mollitia error, aperiam fuga. Veritatis, quasi! Culpa distinctio recusandae impedit atque veritatis optio obcaecati deserunt.
+      </div>
+    </section>
 
-    <footer>
-      Contact: info@sunshine.com
+    <section id="teachers">
+      <h2>About The Teachers</h2>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, delectus. Repellat, neque animi rerum recusandae commodi in excepturi facere corrupti eaque dolorem, delectus officiis necessitatibus repudiandae nam cumque ut dolore ab at ullam. Culpa natus rerum ipsa error odit delectus hic optio temporibus minima eius facilis reiciendis, quisquam sapiente eos laboriosam harum vero accusantium eveniet assumenda alias maiores quia quas ullam! Iure soluta architecto, aspernatur atque id, laborum possimus non, eius placeat quia maxime expedita voluptates excepturi debitis accusantium quam quod quo? Quae quaerat voluptates mollitia error, aperiam fuga. Veritatis, quasi! Culpa distinctio recusandae impedit atque veritatis optio obcaecati deserunt.
+      </div>
+    </section>
+
+    <footer id="contact">
+      <p>Email: <a href="mailto:info@sunshine.com">info@sunshine.com</a></p>
     </footer>
   </main>
 </body>
