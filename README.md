@@ -11,6 +11,8 @@ This repository contains all the assignments done as part of the requirements fo
 * HTML
 * CSS
 
-## Attribution
+## Resources Attribution
+
+### Assignment 1
 
 * [Sun Logo and Favicon by Icons8](https://icons8.com/icon/80502/sun)
