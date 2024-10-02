@@ -38,7 +38,6 @@ h1, h2 {
 
 body {
   background: var(--main-bg);
-
 }
 
 main {
@@ -82,6 +81,11 @@ header {
   box-shadow: 0 10px 10px 1rem var(--main-bg);
 }
 
+header nav ul {
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
 
 header nav a {
   font-family: var(--nav-font);
