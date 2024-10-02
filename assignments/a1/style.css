@@ -1,24 +1,39 @@
-:root {
-  --title: rgb(59, 218, 59);
-  --main-bg: rgb(255, 255, 108);
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+/* All variables are defined here */
+:root {
+  --title-color: rgb(59, 218, 59);
+  --section-title-color: rgb(34, 170, 34);
+  --text-color: #000;
+  
   --table-border: rgb(71, 71, 255);
   --table-bg: rgb(150, 241, 216);
-
-  --link: rgb(109, 109, 109);
+  
+  --link: rgb(172, 146, 0);
   --link-hover: rgb(217, 0, 255);
-
-  --section-title: rgb(34, 170, 34);
-
-  --text-color: #000;
+  
+  --title-font: "Patrick Hand", cursive;
+  --text-font: "Indie Flower", cursive;
+  
+  --main-bg-color: rgb(255, 255, 108);
+  /* --main-bg: linear-gradient(150deg, var(--main-bg-color) 0%, rgb(255, 232, 102) 50%, var(--main-bg-color) 100%); */
+  --main-bg: var(--main-bg-color);
 }
 
+/* General HTML elements stylings are defined here */
 *, p {
   color: var(--text-color);
+  font-family: var(--text-font);
+}
+
+h1, h2 {
+  font-family: var(--title-font);
 }
 
 body {
-  background-color: var(--main-bg);
+  background: var(--main-bg);
+
 }
 
 main {
@@ -27,7 +42,6 @@ main {
   align-items: center;
 }
 
-/* Links */
 a {
   color: var(--link);
   text-decoration: none;
@@ -36,6 +50,11 @@ a {
 a:hover {
   color: var(--link-hover);
   text-decoration: wavy blue;
+}
+
+/* Remove padding above the header */
+main.container {
+  padding-top: 0;
 }
 
 /* Header */
@@ -50,9 +69,11 @@ header {
   top: 0;
   margin-bottom: 2rem;
 
-  background-color: var(--main-bg);
+  /* background-color: var(--main-bg); */
+  background: var(--main-bg);
+
   /* x-offset, y-offset, blur, spread, color */
-  box-shadow: 0 10px 10px 1rem var(--main-bg);
+  /* box-shadow: 0 10px 10px 1rem var(--main-bg); */
 }
 
 .logo {
@@ -67,7 +88,7 @@ header {
 }
 
 .logo > h1 {
-  color: var(--title);
+  color: var(--title-color);
   margin-top: 1rem;
 }
 
@@ -79,17 +100,12 @@ section {
 }
 
 section h2 {
-  color: var(--section-title);
+  color: var(--section-title-color);
 }
 
 /* Welcome */
-.welcome {
-  align-self: flex-start;
-  align-items: flex-start;
-}
-
-.welcome p:first-child {
-  font-weight: bold;
+.welcome :first-child {
+  color: var(--title-color);
   margin-bottom: 0.2rem;
 }
 
@@ -111,9 +127,23 @@ th {
 }
 
 /* Gallery */
-.gallery {
-  background-color: #ffffff;
-  width: 200px;
+.gallery > article {
+  display: flex;
+  padding: 0.1rem;
+  gap: 0.1rem;
+  background: var(--table-border);
+}
+
+.gallery > article > article {
+  margin: 0;
+  padding: 0;
+  max-width: 500px;
+}
+
+.gallery img {
+  width: 400px;
+  height: 300px;
+  object-fit: cover;
 }
 
 /* Media Queries */
