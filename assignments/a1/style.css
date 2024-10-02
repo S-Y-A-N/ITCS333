@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
 /* All variables are defined here */
 :root {
@@ -12,9 +13,13 @@
   
   --link: rgb(172, 146, 0);
   --link-hover: rgb(217, 0, 255);
+
+  --accordian-bg-color: rgb(255, 229, 81);
   
   --title-font: "Patrick Hand", cursive;
-  --text-font: "Indie Flower", cursive;
+  --nav-font: "Indie Flower", cursive;
+  --text-font: "Quicksand", sans-serif;
+  
   
   --main-bg-color: rgb(255, 255, 108);
   /* --main-bg: linear-gradient(150deg, var(--main-bg-color) 0%, rgb(255, 232, 102) 50%, var(--main-bg-color) 100%); */
@@ -52,6 +57,7 @@ a:hover {
   text-decoration: wavy blue;
 }
 
+
 /* Remove padding above the header */
 main.container {
   padding-top: 0;
@@ -73,7 +79,13 @@ header {
   background: var(--main-bg);
 
   /* x-offset, y-offset, blur, spread, color */
-  /* box-shadow: 0 10px 10px 1rem var(--main-bg); */
+  box-shadow: 0 10px 10px 1rem var(--main-bg);
+}
+
+
+header nav a {
+  font-family: var(--nav-font);
+  font-size: 1.1rem;
 }
 
 .logo {
@@ -106,7 +118,12 @@ section h2 {
 /* Welcome */
 .welcome :first-child {
   color: var(--title-color);
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcome p {
+  font-family: var(--nav-font);
+  font-size: 1.2rem;
 }
 
 /* Schedule */
@@ -144,6 +161,36 @@ th {
   width: 400px;
   height: 300px;
   object-fit: cover;
+}
+
+/* Announcements */
+.announcements {
+  width: 100%;
+}
+
+.announcements details {
+  width: 80%;
+  background: var(--accordian-bg-color);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.announcements details summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 700;
+}
+
+.announcements details summary :first-child {
+  font-weight: 500;
+}
+
+.announcements details .text-content {
+
+  background-color: aliceblue;
+  padding: 0.7rem 1rem 0.1rem 1rem;
+  border-radius: 1rem;
 }
 
 /* Media Queries */
