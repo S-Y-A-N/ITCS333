@@ -152,11 +152,24 @@ th {
 }
 
 /* Gallery */
+.gallery {
+  width: 100%;
+}
+
+.gallery article {
+  background: none;
+  box-shadow: none;
+}
+
 .gallery > article {
-  display: flex;
-  padding: 0.1rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-items: center;
   gap: 0.1rem;
-  background: var(--table-border);
+  padding: 0.1rem;
+
 }
 
 .gallery > article > article {
