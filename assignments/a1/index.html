@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <main class="container">
+  <div class="wrapper">
     <header>
       <div class="logo">
         <img src="images/icon.png" alt="">
@@ -31,120 +31,168 @@
       </nav>
     </header>
 
-    <section class="welcome" id="home">
-      <h1>Welcome to Sunshine Kindergarten</h1>
-      <p>Where fun and education go hand in hand</p>
-    </section>
+    <main class="container">
 
-    <section class="schedule" id="schedule">
-      <h2>Schedule</h2>
+      <section class="welcome" id="home">
+        <h1>Welcome to Sunshine Kindergarten</h1>
+        <p>Where fun and education go hand in hand</p>
+      </section>
 
-      <div class="overflow-auto">
-        <table>
-          <thead>
+      <section class="schedule" id="schedule">
+        <h2>Schedule</h2>
+
+        <div class="overflow-auto">
+          <table>
+            <thead>
+              <tr>
+                <th colspan="5">
+                  Fall 2024
+                </th>
+              </tr>
+            </thead>
+    
             <tr>
-              <th colspan="4">
-                Today's Schedule
-              </th>
+              <th>Days</th>
+              <th>8:00 - 9:00</th>
+              <th>9:00 - 10:00</th>
+              <th>10:00 - 11:00</th>
+              <th>11:00 - 12:00</th>
             </tr>
-          </thead>
-  
-          <tr>
-            <th>8:00 - 9:00</th>
-            <th>9:00 - 10:00</th>
-            <th>10:00 - 11:00</th>
-            <th>11:00 - 12:00</th>
-          </tr>
-  
-          <tr>
-            <td>Arabic</td>
-            <td>English</td>
-            <td>Lunch and Playtime</td>
-            <td>Sport</td>
-          </tr>
-        </table>
-      </div>
-    </section>
+    
+            <tr>
+              <th>Sunday</th>
+              <td>Arabic</td>
+              <td>English</td>
+              <td>Lunch and Playtime</td>
+              <td>Sport</td>
+            </tr>
 
-    <section id="gallery" class="gallery">
-      <h2>Gallery</h2>
-      <article>
+            <tr>
+              <th>Monday</th>
+              <td>Arabic</td>
+              <td>English</td>
+              <td>Lunch and Playtime</td>
+              <td>Sport</td>
+            </tr>
 
+            <tr>
+              <th>Tuesday</th>
+              <td>Arabic</td>
+              <td>English</td>
+              <td>Lunch and Playtime</td>
+              <td>Sport</td>
+            </tr>
+
+            <tr>
+              <th>Wednesday</th>
+              <td>Arabic</td>
+              <td>English</td>
+              <td>Lunch and Playtime</td>
+              <td>Sport</td>
+            </tr>
+
+            <tr>
+              <th>Thursday</th>
+              <td>Arabic</td>
+              <td>English</td>
+              <td>Lunch and Playtime</td>
+              <td>Sport</td>
+            </tr>
+          </table>
+        </div>
+      </section>
+
+      <section id="gallery" class="gallery">
+        <h2>Gallery</h2>
         <article>
-            <img src="images/reading.jpeg" alt="kid reading">
+
+          <article>
+              <img src="images/reading.jpeg" alt="kid reading">
+          </article>
+
+          <article>
+              <img src="images/drawing.jpg" alt="kids painting">
+          </article>
+
+          <article>
+              <img src="images/sport.jpg" alt="kids playing sport">
+          </article>
         </article>
+      </section>
 
-        <article>
-            <img src="images/drawing.jpg" alt="kids painting">
-        </article>
+      <section id="announcements" class="announcements">
+        <h2>Announcements</h2>
+        <details>
+          <summary><span>2 Oct 2024</span><span> Trip Fees Reminder</span></summary>
+          <div class="text-content">
+            <p>Dear parents,</p>
+            <p>Please make sure to pay the trip fees if you wish for your child to go.</p>
+            <p>Regeards,</p>
+            <p>Ms. Noor</p>
+          </div>
+        </details>
+        
+        <details>
+          <summary><span>14 Sep 2024</span><span>Class Requirements</span></summary>
+          <div class="text-content">
+            <p>Dear parents,</p>
+            <p>Please provide your child with the following items:</p>
+            <p>
+              <ul>
+                <li>1 Sketchbook for drawing</li>
+                <li>1 Arabic Notebook</li>
+                <li>1 English Notebook</li>
+              </ul>
+            </p>
+            <p>Regeards,</p>
+            <p>Ms. Noor</p>
+          </div>
+        </details>
+      </section>
 
-        <article>
-            <img src="images/sport.jpg" alt="kids playing sport">
-        </article>
-      </article>
-    </section>
-
-    <section id="announcements" class="announcements">
-      <h2>Announcements</h2>
-      <details>
-        <summary><span>2 Oct 2024</span><span> Trip Fees Reminder</span></summary>
-        <div class="text-content">
-          <p>Dear parents,</p>
-          <p>Please make sure to pay the trip fees if you wish for your child to go.</p>
-          <p>Regeards,</p>
-          <p>Ms. Noor</p>
-        </div>
-      </details>
-      
-      <details>
-        <summary><span>14 Sep 2024</span><span>Class Requirements</span></summary>
-        <div class="text-content">
-          <p>Dear parents,</p>
-          <p>Please provide your child with the following items:</p>
-          <p>
-            <ul>
-              <li>1 Sketchbook for drawing</li>
-              <li>1 Arabic Notebook</li>
-              <li>1 English Notebook</li>
-            </ul>
-          </p>
-          <p>Regeards,</p>
-          <p>Ms. Noor</p>
-        </div>
-      </details>
-    </section>
-
-    <section id="teachers">
-      <h2>About The Teachers</h2>
-      <!-- Zainab -->
-        <div class="teacher-card">
-            <img src="teacher1.jpg" alt="Teacher 1">
-            <div>
-                <div class="teacher-name">Amal Mohammed</div>
-                <div>Arabic</div>
-            </div>
-        </div>
-        <div class="teacher-card">
-            <img src="teacher2.jpg" alt="Teacher 2">
-            <div>
-                <div class="teacher-name">Shaikha Ali</div>
-                <div>English</div>
-            </div>
-        </div>
-        <div class="teacher-card">
-            <img src="teacher3.jpg" alt="Teacher 3">
-            <div>
-                <div class="teacher-name">Fatima Nasser</div>
-                <div>Sport</div>
-            </div>
-        </div>
-    </section>
-    </section>
+      <section id="teachers">
+        <h2>About The Teachers</h2>
+        <!-- Zainab -->
+          <div class="teacher-card">
+              <img src="teacher1.jpg" alt="Teacher 1">
+              <div>
+                  <div class="teacher-name">Amal Mohammed</div>
+                  <div>Arabic</div>
+              </div>
+          </div>
+          <div class="teacher-card">
+              <img src="teacher2.jpg" alt="Teacher 2">
+              <div>
+                  <div class="teacher-name">Shaikha Ali</div>
+                  <div>English</div>
+              </div>
+          </div>
+          <div class="teacher-card">
+              <img src="teacher3.jpg" alt="Teacher 3">
+              <div>
+                  <div class="teacher-name">Fatima Nasser</div>
+                  <div>Sport</div>
+              </div>
+          </div>
+      </section>
+      </section>
+    </main>
 
     <footer id="contact">
-      <p>Email: <a href="mailto:info@sunshine.com">info@sunshine.com</a></p>
+      <div class="contact">
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480v58q0 59-40.5 100.5T740-280q-35 0-66-15t-52-43q-29 29-65.5 43.5T480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480v58q0 26 17 44t43 18q26 0 43-18t17-44v-58q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93h200v80H480Zm0-280q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35Z"/></svg>
+          <a href="mailto:info@sunshine.com">info@sunshine.com</a>
+        </p>
+        <p>
+          <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#434343"><path d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+          <a href="tel:+97310101010">+973 1010 1010</a>
+        </p>
+      </div>
+      <div class="line"></div>
+      <p class="copyright">Copyright &copy 2024 Sunshine Kindergarten</p>
     </footer>
-  </main>
+  </div>
 </body>
 
 </html>
