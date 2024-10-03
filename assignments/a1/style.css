@@ -21,7 +21,7 @@
   --text-font: "Quicksand", sans-serif;
   
   
-  --main-bg-color: rgb(255, 255, 108);
+  --main-bg-color: rgb(255, 255, 168);
   /* --main-bg: linear-gradient(150deg, var(--main-bg-color) 0%, rgb(255, 232, 102) 50%, var(--main-bg-color) 100%); */
   --main-bg: var(--main-bg-color);
 }
