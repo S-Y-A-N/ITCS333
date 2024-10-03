@@ -214,10 +214,10 @@ th {
 .teacher-card {
   display: flex;
   align-items: center;
-  margin: 15px 0;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid var(--table-border);
+  border-radius: 6px;
 }
 
 .teacher-card img {
