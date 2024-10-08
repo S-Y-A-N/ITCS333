@@ -240,28 +240,6 @@ th {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.teacher-card {
-  display: flex;
-  align-items: center;
-  margin: 10px 0;
-  padding: 12px;
-  border: 1px solid var(--table-border);
-  border-radius: 6px;
-}
-
-.teacher-card img {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  margin-right: 15px;
-  border: 2px solid var(--table-border);
-}
-
-.teacher-name {
-  font-weight: bold;
-  color: var(--table-border);
-}
-
 .flip-card {
   background-color: transparent;
   width: 300px;
