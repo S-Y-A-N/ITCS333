@@ -9,6 +9,7 @@ rel="stylesheet"
 >
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="script.js" defer></script>
   <title>Sunshine Kindergarten</title>
 </head>
 
@@ -16,14 +17,14 @@ rel="stylesheet"
   <div class="wrapper">
     <header>
       <div class="logo">
-        <img src="images/icon.png" alt="">
+        <img src="images/icon.png" alt="sun icon">
         <h1>Sunshine Kindergarten</h1>
       </div>
       <nav>
         <ul>
           <li><a href="#home">Home</a></li>
-          <li><a href="#schedule">Schedule</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+          <li><a onclick="scroll('schedule');">Schedule</a></li>
+          <li><a onclick="scroll('gallery');">Gallery</a></li>
           <li><a href="#announcements">Announcements</a></li>
           <li><a href="#teachers">Teachers</a></li>
           <li><a href="#contact">Contact</a></li>
