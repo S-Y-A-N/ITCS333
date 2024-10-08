@@ -59,6 +59,7 @@ a {
 a:hover {
   color: var(--link-hover);
   text-decoration: wavy blue;
+  cursor: pointer;
 }
 
 
@@ -70,6 +71,7 @@ a:hover {
 
 /* Header */
 header {
+  z-index: 9;
   display: flex;
   justify-content: space-between;
   align-items: center;
