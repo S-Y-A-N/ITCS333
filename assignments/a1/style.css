@@ -143,11 +143,18 @@ section h2 {
 }
 
 .welcome p {
+  text-align: center;
   font-family: var(--nav-font);
   font-size: 1.5rem;
 }
 
 /* Schedule */
+.table {
+  background: white;
+  border: 1rem solid white;
+  border-bottom: none;
+}
+
 table, td, th {
   background: var(--table-bg);
   border: 1px solid var(--table-border);
@@ -315,5 +322,17 @@ footer {
 @media (max-width: 1100px) {
   header {
     flex-direction: column;
+  }
+}
+
+@media (max-width: 490px) {
+  .table {
+    width: 360px;
+  }
+}
+
+@media (max-width: 370px) {
+  .table {
+    width: 300px;
   }
 }
