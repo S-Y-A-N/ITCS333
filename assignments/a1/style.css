@@ -1,3 +1,4 @@
+/* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
@@ -7,19 +8,19 @@
   --title-color: rgb(255, 208, 0);
   --section-title-color: rgb(31, 53, 180);
   --text-color: #000;
-  
+
   --table-border: rgb(71, 71, 255);
   --table-bg: rgb(150, 241, 216);
-  
+
   --link: rgb(0, 0, 0);
   --link-hover: rgb(0, 89, 255);
 
   --accordian-bg-color: rgb(150, 222, 255);
-  
+
   --title-font: "Patrick Hand", cursive;
   --nav-font: "Indie Flower", cursive;
   --text-font: "Quicksand", sans-serif;
-  
+
   --header-bg: white;
   --main-bg-color: rgb(0, 195, 255);
   --main-bg: linear-gradient(150deg, var(--main-bg-color) 0%, rgb(255, 232, 102) 50%, var(--main-bg-color) 100%);
@@ -27,16 +28,19 @@
 }
 
 /* General HTML elements stylings are defined here */
-*, p {
+*,
+p {
   color: var(--text-color);
   font-family: var(--text-font);
   box-sizing: border-box;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-family: var(--title-font);
 }
 
+/* Page layout using flexbox */
 .wrapper {
   display: flex;
   flex-direction: column;
@@ -45,6 +49,7 @@ h1, h2 {
   background: var(--main-bg);
 }
 
+/* Main content layout (content sections) */
 main {
   display: flex;
   flex-direction: column;
@@ -106,19 +111,19 @@ header nav a {
   justify-content: center;
 }
 
-.logo > img {
+.logo>img {
   width: 3rem;
   margin-right: 0.7rem;
 }
 
-.logo > h1 {
+.logo>h1 {
   color: var(--title-color);
   margin-top: 1rem;
   -webkit-text-stroke: 1px #775306;
   font-size: 2.2rem;
 }
 
-/* All Page Sections */
+/* All of the content sections */
 section {
   display: flex;
   flex-direction: column;
@@ -129,7 +134,7 @@ section h2 {
   color: var(--section-title-color);
 }
 
-/* Welcome */
+/* 1- Welcome message */
 .welcome :first-child {
   color: var(--title-color);
   margin-bottom: 0.5rem;
@@ -148,7 +153,7 @@ section h2 {
   font-size: 1.5rem;
 }
 
-/* Schedule */
+/* 2- Weekly Schedule */
 .table {
   background: white;
   border: 1rem solid white;
@@ -158,7 +163,9 @@ section h2 {
   box-shadow: 0 0 1px 1px #000;
 }
 
-table, td, th {
+table,
+td,
+th {
   background: var(--table-bg);
   border: 1px solid var(--table-border);
   color: #000;
@@ -174,7 +181,7 @@ th {
   font-weight: bold;
 }
 
-/* Gallery */
+/* 3- Photo gallery of class activites */
 .gallery {
   width: 100%;
 }
@@ -227,7 +234,7 @@ th {
 }
 
 
-/* Announcements */
+/* 4- Announcements */
 .announcements {
   width: 100%;
 }
@@ -259,7 +266,7 @@ th {
   border: 1px solid #000;
 }
 
-/* Teachers */
+/* 5- Teacher information */
 #teachers {
   width: 100%;
 }
@@ -275,9 +282,12 @@ th {
 
 .flip-card {
   background-color: transparent;
-  width: 300px;  /* Card width */
-  height: 300px; /* Card height */
-  perspective: 1000px; /* 3D effect */
+  width: 300px;
+  /* Card width */
+  height: 300px;
+  /* Card height */
+  perspective: 1000px;
+  /* 3D effect */
 }
 
 .flip-card-inner {
@@ -293,11 +303,13 @@ th {
   transform: rotateY(180deg);
 }
 
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
 }
 
@@ -347,11 +359,15 @@ th {
 }
 
 .flip-card img {
-  width: 100%;  /* Make image responsive */
-  height: 100%; /* Fill the card height */
-  object-fit: cover; /* Cover the area without distortion */
+  width: 100%;
+  /* Make image responsive */
+  height: 100%;
+  /* Fill the card height */
+  object-fit: cover;
+  /* Cover the area without distortion */
   border-radius: 1rem;
 }
+
 /* Footer */
 footer {
   /* border-radius: 1rem 1rem 0 0; */
