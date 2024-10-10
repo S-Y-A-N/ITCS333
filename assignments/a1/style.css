@@ -181,30 +181,29 @@ th {
 
 .gallery article {
   background: none;
-  box-shadow: none;
 }
 
-.gallery > article {
-  width: 100%;
-
+.gallery-container {
   display: grid;
+  max-width: 100%;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
-  gap: 0.1rem;
-  padding: 0.1rem;
-
+  gap: 0.2rem;
+  padding: 0.5rem;
 }
 
-.gallery > article > article {
+.gallery-card {
   margin: 0;
   padding: 0;
-  max-width: 500px;
+  border-radius: 0.3rem;
+
+  align-self: flex-start;
 }
 
 .gallery img {
   width: 400px;
   height: 300px;
   object-fit: cover;
+  border-radius: 0.3rem;
 }
 
 /* Announcements */
@@ -363,7 +362,19 @@ footer {
   }
 }
 
+@media (max-width: 530px) {
+  .table {
+    width: 460px;
+  }
+}
+
 @media (max-width: 490px) {
+  .table {
+    width: 420px;
+  }
+}
+
+@media (max-width: 430px) {
   .table {
     width: 360px;
   }
