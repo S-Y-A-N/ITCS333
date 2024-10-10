@@ -254,7 +254,9 @@ th {
   width: 300px;
   height: 200px;
   border: 1px solid #f1f1f1;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px; /* 3D effect */
+  display: inline-block; /* Ensures cards sit next to each other */
+  margin: 10px; /* Adds space between cards */
 }
 
 /* This container is needed to position the front and back side */
@@ -267,7 +269,7 @@ th {
   transform-style: preserve-3d;
 }
 
-/* Do an horizontal flip when you move the mouse over the flip box container */
+/* Do a horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
 }
@@ -292,6 +294,14 @@ th {
   background-color: dodgerblue;
   color: white;
   transform: rotateY(180deg);
+}
+
+/* New styles for images */
+.flip-card-front img {
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  object-fit:cover; /* Cover the area without distortion */
+  border-radius: 8px; /* Optional rounded corners */
 }
 
 /* Footer */
