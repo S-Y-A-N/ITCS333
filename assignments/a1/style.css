@@ -153,6 +153,9 @@ section h2 {
   background: white;
   border: 1rem solid white;
   border-bottom: none;
+
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1px 1px #000;
 }
 
 table, td, th {
@@ -214,9 +217,7 @@ th {
   background: var(--accordian-bg-color);
   padding: 1rem;
   border-radius: 1rem;
-
-  /* Black border */
-  box-shadow: 0 0 1px 1px #000;
+  border: 1px solid #000;
 }
 
 .announcements details summary {
@@ -235,31 +236,28 @@ th {
   background-color: aliceblue;
   padding: 1rem 0.5rem 0.1rem 1rem;
   border-radius: 0.7rem;
-
-  box-shadow: 0 0 1px 1px #000;
+  border: 1px solid #000;
 }
 
-/* Teachers - Zainab */
-#TEACHERS {
-  background-color: #f3f2ef;
-  padding: 50px;
+/* Teachers */
+#teachers {
+  width: 100%;
+}
+
+.cards {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-#TEACHERS h1 {
-  width: 100%;
-  text-align: center;
+  align-items: center;
+  gap: 0.1rem;
 }
 
 .flip-card {
   background-color: transparent;
   width: 300px;  /* Card width */
-  height: 282px; /* Card height */
-  border: 1px solid #f1f1f1;
+  height: 300px; /* Card height */
   perspective: 1000px; /* 3D effect */
-  margin: 10px;
 }
 
 .flip-card-inner {
@@ -283,21 +281,56 @@ th {
   backface-visibility: hidden;
 }
 
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
+.flip-card-front::after {
+  width: 100%;
+  height: fit-content;
+  background-color: #00000050;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.5rem;
+  padding: 0.3rem;
+
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-radius: 0 0 1rem 1rem;
+}
+
+.flip-card-front.t-arabic:after {
+  content: "Arabic";
+}
+
+.flip-card-front.t-english:after {
+  content: "English";
+}
+
+.flip-card-front.t-sport:after {
+  content: "Sport";
 }
 
 .flip-card-back {
-  background-color: dodgerblue;
+  background: linear-gradient(to top, #006eff 0%, #219fff 100%);
   color: white;
   transform: rotateY(180deg);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  border: 1px solid black;
+
+}
+
+.flip-card-back p:first-of-type {
+  font-weight: 700;
+}
+
+.flip-card-back p {
+  font-weight: 500;
 }
 
 .flip-card img {
   width: 100%;  /* Make image responsive */
   height: 100%; /* Fill the card height */
   object-fit: cover; /* Cover the area without distortion */
+  border-radius: 1rem;
 }
 /* Footer */
 footer {
