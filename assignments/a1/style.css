@@ -360,6 +360,10 @@ footer {
   header {
     flex-direction: column;
   }
+
+  .announcements details {
+    width: 100%;
+  }
 }
 
 @media (max-width: 530px) {
